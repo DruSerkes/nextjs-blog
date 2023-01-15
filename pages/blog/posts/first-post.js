@@ -1,10 +1,12 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import Layout from '../../../components/layout'
+// import Script from "next/script";
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -14,9 +16,7 @@ export default function FirstPost() {
         onLoad={() => console.log(`script loaded correctly, window.FB has been populated: `, window.FB)}
       /> */}
       <h1>First Post</h1>
-      <h2>
-        <Link href="/">← Back to home</Link>
-      </h2>
-    </>
+      <Image src="/profile.jpg" width={400} height={275} alt="Profile image" className="Profile-Image" />
+    </Layout>
   );
 }
