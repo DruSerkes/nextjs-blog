@@ -56,8 +56,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by &rarr;
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Powered by &rarr; Vercel
         </a>
       </footer>
 
