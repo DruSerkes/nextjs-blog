@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read <Link href="blog/posts/first-post">This Page!</Link>
         </h1>
 
         <p className={styles.description}>
@@ -55,7 +56,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by &rarr;
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
